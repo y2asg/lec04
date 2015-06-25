@@ -1,0 +1,33 @@
+package isOpenNow;
+
+import java.util.Calendar;
+import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class IsOpenNow {
+
+	public static boolean isOpenNow(int dayOfWeek, int hour){
+		File file = new File("opentime");
+		FileReader filereader = new Filereader(file);
+		
+		
+		
+		if(){
+		
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public static boolean isOpenNow(){
+		Calendar calendar = Calendar.getInstance();
+		int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+		int hour = calendar.get(Calendar.HOUR_OF_DAY);
+		return isOpenNow(dayOfWeek, hour);
+		
+	}
+}
